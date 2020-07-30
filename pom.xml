@@ -69,12 +69,12 @@
 
     <modules>
         <module>api</module>
+        <module>extensions/json/jackson</module>
+        <module>extensions/json/gson</module>
         <module>impl</module>
         <module>extensions/crypto/sodium</module>
         <module>extensions/crypto/bouncy-castle</module>
         <module>extensions/crypto/hkdf</module>
-        <module>extensions/json/jackson</module>
-        <module>extensions/json/gson</module>
         <module>integration-tests</module>
         <module>coverage</module>
     </modules>
@@ -326,6 +326,9 @@
                             <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
+                        <manifestEntries>
+                            <Automatic-Module-Name>${module-name}</Automatic-Module-Name>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>
