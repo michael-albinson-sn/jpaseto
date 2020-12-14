@@ -32,7 +32,7 @@ import java.security.NoSuchAlgorithmException;
  * A Java implementation of XChaCha20Poly1305 using Bouncy Castle.
  * Adapted from: https://github.com/o1c-dev/o1c/blob/567a420aacb4c41b415e0413a4b347ec416bb7e9/java8/src/main/java/dev/o1c/spi/XChaCha20Poly1305.java
  * @see <a href="https://tools.ietf.org/html/rfc8439">rfc8439</a>
- * @see <a href="https://tools.ietf.org/html/draft-irtf-cfrg-xchacha-03>draft rfc xchacha</a>
+ * @see <a href="https://tools.ietf.org/html/draft-irtf-cfrg-xchacha-03">draft rfc xchacha</a>
  */
 final class XChaCha20Poly1305 {
     private static final int KEY_SIZE = 32;
